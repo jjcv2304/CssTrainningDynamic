@@ -1,17 +1,8 @@
-<div class="TopPanel">
+<link rel="stylesheet" [href]='sanitizer.bypassSecurityTrustResourceUrl(cssUrl)'>
+<div class="TopPanel" (click)="toogleGlobalBorder()">
   <h3>{{title}}</h3>
 </div>
 
-<div class="LeftPanel column side">
-  <ul>
-    <li><a routerLink="/flexboxtraining">Flexbox Training</a></li>
-    <li>Margins & Paddings</li>
-    <li>Divs & Floats</li>
-  </ul>
-</div>
-
-<div class="CentralPanel column middle">
-  <router-outlet></router-outlet>
-</div>
+<router-outlet></router-outlet>
 
 

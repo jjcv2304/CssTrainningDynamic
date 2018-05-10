@@ -1,0 +1,21 @@
+ul li{
+  cursor:pointer;
+}
+
+li.menuActive{
+border: 1px solid darkseagreen;
+  ul{
+    display: block;
+    li {
+      border: 1px dotted orangered;
+      margin: 2px;
+    }
+  }
+}
+
+li.menuNoActive ul{
+  display:none ;
+}
+
+
+

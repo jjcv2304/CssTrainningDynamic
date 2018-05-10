@@ -1,16 +1,31 @@
-
-
-
-<div >
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, at autem cum deserunt dicta, error ipsum
-    iure nemo perferendis quod recusandae, repellat sapiente ut? Ad adipisci asperiores cumque debitis labore!</p>
-  <p>Atque commodi, consequuntur debitis dolores eligendi enim eos exercitationem expedita explicabo fugit itaque nemo
-    nisi odit officiis perspiciatis porro praesentium provident quae quia quibusdam repudiandae sequi sint ullam
-    velit voluptatem?</p>
-  <p>Adipisci aut ut voluptas. Aliquam libero maxime officiis? A, accusamus delectus esse eveniet ex explicabo fuga
-    iusto, nemo perspiciatis repellat, repudiandae sed sint sunt. Animi inventore nulla sapiente sunt tenetur?</p>
-  <p>Aliquid delectus deserunt distinctio dolores, ducimus earum est explicabo iure magnam molestias, nesciunt
-    perspiciatis ut voluptate! Alias, aliquid delectus esse est exercitationem hic id inventore molestias saepe sunt
-    tempore voluptates?</p>
+<div class="LeftPanel column side">
+  <ul>
+    <li [ngClass]="{menuActive: isActive('Tutorials'), menuNoActive: !isActive('Tutorials')}">
+      <span (click)="select('Tutorials');">Tutorials</span>
+      <ul>
+        <li>Welcome</li>
+        <li>H+2C Design</li>
+        <li>H+3C+F Design</li>
+        <li>Vertical Div containers</li>
+        <li>Horizontal Div containers</li>
+        <li>Others</li>
+      </ul>
+    </li>
+    <li [ngClass]="{menuActive: isActive('Practice'), menuNoActive: !isActive('Practice')}">
+      <span (click)="select('Practice');">Practice</span>
+      <ul>
+        <li>Practice Layout</li>
+        <li>Practice Vertical displays</li>
+        <li>Practive Horizontal displays</li>
+      </ul>
+    <li><a routerLink="/home">Home</a></li>
+  </ul>
 </div>
-<button (click)="goBack()">go back</button>
+
+<div class="CentralPanel column middle">
+  <p>Welcome to the flebox section.</p>
+  <p>Please select one of the options on the left menu panel</p>
+
+  <button (click)="goBack()">go back</button>
+</div>
+

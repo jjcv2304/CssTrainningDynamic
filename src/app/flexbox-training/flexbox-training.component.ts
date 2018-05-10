@@ -9,6 +9,7 @@ import { Location } from '@angular/common';
   styleUrls: ['./flexbox-training.component.scss']
 })
 export class FlexboxTrainingComponent implements OnInit {
+  selected: any;
 
   constructor(private location: Location) { }
 
@@ -17,5 +18,12 @@ export class FlexboxTrainingComponent implements OnInit {
 
   goBack(): void {
     this.location.back();
+  }
+
+  select(item): void {
+    this.selected = (this.selected === item ? null : item);
+  }
+  isActive(item) {
+    return this.selected === item;
   }
 }
