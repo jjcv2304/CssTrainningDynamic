@@ -1,20 +1,24 @@
-ul li{
-  cursor:pointer;
+ul li {
+  cursor: pointer;
 }
 
-li.menuActive{
-border: 1px solid darkseagreen;
-  ul{
+li.menuActive {
+
+  span {
+    text-decoration: underline;
+  }
+  background-color: #cdd5dc;
+  ul {
     display: block;
     li {
-      border: 1px dotted orangered;
       margin: 2px;
     }
   }
+
 }
 
-li.menuNoActive ul{
-  display:none ;
+li.menuNoActive ul {
+  display: none;
 }
 
 

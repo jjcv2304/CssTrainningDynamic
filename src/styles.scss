@@ -3,6 +3,7 @@
 //* { border: 1px solid yellow; }
 //* {outline : 1px dotted #cbb72f; }
 
+
 body {
   background-color: aliceblue;
   color: #303030;
@@ -16,6 +17,7 @@ body {
   padding: 5px;
   //border: 1px dotted blue;
   /* Left and right column */
+
   &.side {
     width: 15%;
   }
@@ -37,16 +39,18 @@ $breakpoint-tablet: 600px;
 //      Panels decorations
 //------------------------
 .TopPanel {
-  //border: 1px solid blue;
-  //background-color: #F1F1F1;
-  text-align: center;
+  text-align: left;
   padding: 20px;
+  background-color: #606060;
+  text-decoration-color: white;
+  color: white;
   h3 {
     text-decoration: underline;
   }
 }
 
 .LeftPanel {
+  border-right: 1px solid #606060;
   ul {
     padding-left: 10px;
     list-style-type: none;
