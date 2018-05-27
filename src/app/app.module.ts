@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { FlexboxTrainingComponent } from './flexbox-training/flexbox-training.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { HomeComponent } from './home/home.component';
+import { SmacssComponent } from './smacss/smacss.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { HomeComponent } from './home/home.component';
     AppComponent,
     FlexboxTrainingComponent,
     HomeComponent,
+    SmacssComponent,
   ],
   imports: [
     BrowserModule,

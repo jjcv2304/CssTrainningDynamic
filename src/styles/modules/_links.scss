@@ -1,0 +1,22 @@
+//------------------------
+// Links decoration
+//------------------------
+
+a {
+  //padding: 5px 10px;
+  text-decoration: none;
+  //margin-top: 10px;
+  display: inline-block;
+  //background-color: #eee;
+  border-radius: 4px;
+}
+
+a.active,a:visited, a:link {
+  //background-color: black;
+  background-color: aliceblue;
+  color: #303030;
+}
+a:hover {
+  color: red;
+}
+
