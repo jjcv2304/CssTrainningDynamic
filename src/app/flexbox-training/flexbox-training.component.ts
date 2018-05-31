@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Location } from '@angular/common';
-
-
 @Component({
   selector: 'app-flexbox-training',
   templateUrl: './flexbox-training.component.html',
@@ -11,13 +8,9 @@ import { Location } from '@angular/common';
 export class FlexboxTrainingComponent implements OnInit {
   selected: any;
 
-  constructor(private location: Location) { }
+  constructor() { }
 
   ngOnInit() {
-  }
-
-  goBack(): void {
-    this.location.back();
   }
 
   select(item): void {

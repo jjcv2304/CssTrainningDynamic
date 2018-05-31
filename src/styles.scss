@@ -47,6 +47,8 @@ $breakpoint-tablet: 600px;
   h3 {
     text-decoration: underline;
   }
+  display: flex;
+  align-items: center;
 }
 
 .LeftPanel {
@@ -58,9 +60,9 @@ $breakpoint-tablet: 600px;
     list-style-image: none;
     li{
       padding-top: 5px;
-      :hover{
-        color: red;
-      }
+    }
+    li:hover{
+      color: red;
     }
   }
 }

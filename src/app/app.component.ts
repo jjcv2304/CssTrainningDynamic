@@ -10,9 +10,12 @@ export class AppComponent {
   title = 'Css trainning';
   isEnableBorders: boolean;
   cssUrl: string;
+  showBackHomeBtn: boolean;
+
   constructor(public sanitizer: DomSanitizer) {
     this.isEnableBorders = false;
     this.cssUrl = '/assets/disableBorders.css';
+    this.showBackHomeBtn = true;
   }
 
   toogleGlobalBorder() {
@@ -22,7 +25,6 @@ export class AppComponent {
     } else {
       this.cssUrl = '/assets/disableBorders.css';
     }
-
   }
 
 }

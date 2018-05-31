@@ -12,9 +12,12 @@ li.menuActive {
     display: block;
     li {
       margin: 2px;
+      color: black;
+    }
+    li:hover{
+      color: red;
     }
   }
-
 }
 
 li.menuNoActive ul {

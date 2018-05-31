@@ -3,9 +3,9 @@
     <li [ngClass]="{menuActive: isActive('Tutorials'), menuNoActive: !isActive('Tutorials')}">
       <span (click)="select('Tutorials');">Tutorials</span>
       <ul>
-        <li>Welcome</li>
-        <li>H+2C Design</li>
-        <li>H+3C+F Design</li>
+        <li>Introduction</li>
+        <li>Header + 2 Columns</li>
+        <li>Header + 3 Columns</li>
         <li>Vertical Div containers</li>
         <li>Horizontal Div containers</li>
         <li>Others</li>
@@ -14,11 +14,10 @@
     <li [ngClass]="{menuActive: isActive('Practice'), menuNoActive: !isActive('Practice')}">
       <span (click)="select('Practice');">Practice</span>
       <ul>
-        <li>Practice Layout</li>
-        <li>Practice Vertical displays</li>
-        <li>Practive Horizontal displays</li>
+        <li>Layouts</li>
+        <li>Vertical displays</li>
+        <li>Horizontal displays</li>
       </ul>
-    <li><a routerLink="/home">Home</a></li>
   </ul>
 </div>
 
@@ -26,6 +25,5 @@
   <p>Welcome to the flebox section.</p>
   <p>Please select one of the options on the left menu panel</p>
 
-  <!--<button (click)="goBack()">go back</button>-->
 </div>
 

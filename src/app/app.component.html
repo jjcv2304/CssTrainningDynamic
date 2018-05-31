@@ -1,6 +1,22 @@
 <link rel="stylesheet" [href]='sanitizer.bypassSecurityTrustResourceUrl(cssUrl)'>
-<div class="TopPanel" (click)="toogleGlobalBorder()">
-  <h3>{{title}}</h3>
+<!--todo move the link to prevent loading css everytime-->
+
+<div class="TopPanel">
+  <div class="TopPanelContainer">
+    <div (click)="toogleGlobalBorder()">
+      <h3 class="TopPanelTitle">{{title}}</h3>
+    </div>
+    <a *ngIf="showBackHomeBtn" routerLink="/home" class="TopPanelHomelink">
+      <small>(Home)</small>
+    </a>
+  </div>
+  <div class="TopPanelCarrousel">
+      <button class="TopPanelCarrouselButton">Flexbox Training</button>
+      <button class="TopPanelCarrouselButton">Grid Layout</button>
+      <button class="TopPanelCarrouselButton">SMACSS</button>
+      <button class="TopPanelCarrouselButton">Others</button>
+  </div>
+
 </div>
 
 <router-outlet></router-outlet>

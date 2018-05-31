@@ -1,0 +1,27 @@
+.TopPanelContainer {
+  width: 130px;
+
+}
+.TopPanelTitle {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  cursor: pointer;
+}
+.TopPanelHomelink {
+  background-color: transparent;
+  margin-left: 15px;
+}
+
+.TopPanelCarrousel{
+vertical-align: center;
+  height: 120px;
+  //border: 1px solid red;
+  display: flex;
+  align-items: center;
+}
+.TopPanelCarrouselButton {
+  height: 100px;
+  width: 100px;
+}
+
+
